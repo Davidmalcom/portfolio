@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/b218a44107.js" crossorigin="anonymous"></script> 
+  </head>
+  <body>
+<!----------------------------- -Nav--------------------------->    
+    <div id="header">
+        <div class="container">
+            <nav> 
+                <img src="images/logo.png.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home<a></li>
+                    <li><a href="#about">About<a></li>
+                    <li><a href="#services">Services<a></li>
+                    <li><a href="#portfolio">My Work<a></li> 
+                    <li><a href="#Contact">Contact<a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>  
+                </ul> 
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-col-1">
+              <div class="header-img">
+                <img class="image-photo" src="images\_lw_flames.jpg">
+              </div>
+            <div class="Header-text">
+              <p>UI/UX Designer</p>
+              <h1>Hi,I'm <span>Malcom </span><br>David From Kenya</h1>
+            </div>
+          </div>
+        </div>
+    </div>
+<!----------------------------about------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/male-1.jpg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I am a passionate computer science student with a keen interest in web development and programming. Through my projects in HTML,
+               CSS, JavaScript, and Python, I have honed my skills in both front-end and back-end development. I thrive on solving complex 
+               problems and enjoy the creativity involved in designing user-friendly interfaces. My dedication to learning and exploring new 
+               technologies drives me to constantly expand my knowledge and improve my abilities. I am excited to continue my journey in 
+               computer science, eager to tackle new challenges, and contribute to innovative solutions in the field.</p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick = "opentab('skills')">Skills</p>
+                <p class="tab-links" onclick = "opentab('experience')">Experience</p>
+                <p class="tab-links" onclick = "opentab('education')">Education</p>
+              </div> 
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                  <li><span>Web Developer</span><br>Web App Development</li>
+                  <li><span>App Development</span><br>Building Android/iOS apps</li>
+                  <li><span>Computer services</span><br>servicing your computer devices.</li>
+                  <li><span>and many other ...</span></li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>2024</span><br>ICT attachee at Kenya Rural Roads Authority (KERRA).</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2021 - Current</span><br> Still undertaking my bachelors degree at Masinde Muliro University of Science and Technology</li>
+                  <li><span>2017-2020/2021</span><br>Completed my High School Education at Mbita High School.</li>
+                  <li><span>2009 - 2016</span><br>Completed my Primary school education at Lake Primary School in kisumu,Kenya.</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!---------------------------services----------------------->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>Transform your online presence with stunning and 
+          user-friendly web design! I specialize in creating 
+          visually appealing, responsive, and intuitive websites 
+          that captivate your audience and enhance your brand's 
+          digital footprint. Whether you need a brand-new site 
+          or a redesign of your existing one, I combine creativity 
+          with the latest design trends to deliver a seamless and 
+          engaging user experience. Let's bring your vision to life 
+          and make your website a true reflection of your brand's 
+          identity.</p>
+        <a href="#"></a>
+      </div>
+      <div>
+        <i class="fa-solid fa-crop"></i>
+        <h2>UI/UX</h2>
+        <p>Elevate your digital presence with intuitive and 
+          visually stunning designs that captivate and engage your 
+          audience. Our UI/UX design service focuses on creating user-centered 
+          interfaces that are not only beautiful but also easy to 
+          navigate. Whether you're building a new app or revamping 
+          a website, we ensure a seamless experience that delights 
+          users and enhances functionality. Let us bring your vision
+           to life with designs that are as functional as they are 
+           appealing. Experience the perfect blend of creativity and 
+           usability with our UI/UX expertise.</p>
+        
+      </div>
+      <div class="services-list3">
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h2>Computer Servicing</h2>
+        <p>Keep your computer running smoothly with our professional 
+          computer servicing! Whether it's a slow system, virus removal, 
+          hardware upgrades, or regular maintenance, we've got you covered. 
+          Our expert technicians ensure your computer is optimized for peak 
+          performance, giving you a hassle-free computing experience. 
+          Trust us to handle all your computer servicing needs with precision and care.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------------------------- My Work------------------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/work-1.png">
+        <div class="layer">
+          <h3>Authentification Page</h3>
+          <p>.A user-friendly authentication page designed for 
+            seamless sign-up and sign-in, 
+            ensuring quick and safe access to your application.
+          </p>
+          <p>
+            Check it out at github.
+          </p>
+          <a href="https://github.com/Davidmalcom/LOGINPAGE.py.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-2.png">
+        <div class="layer">
+          <h3>Web certificate Validator</h3>
+          <p>A Python-based client-server program that generates a local server certificate and key, with built-in validation to ensure the certificate's authenticity and security.</p>
+          <p>
+            Check it out at github.
+          </p>
+          <a href="https://github.com/Davidmalcom/SSLCertificateValidation.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-3.png">
+        <div class="layer">
+          <h3>Job serch Application</h3>
+          <p>A mobile job search application featuring job listings, location and industry filters, and user profile management to streamline job hunting.
+          </p>
+          <p>
+            Check it out at github.
+          </p>
+          <a href="https://github.com/yourusername/job-search-application" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="project.html" target="_blank" class="btn">See More</a>
+  </div>
+</div>
+<!--------------------------Contact-------------------------->
+<div id="Contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title"> Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>davidmalcom8751@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i>0741013836</p>
+        <div class="social-icons">
+          <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+         <a href="images/MALCOM CV.docx" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>copyright @ Malcom.Made with <i class="fa-solid fa-heart"> by hard Coding</i> </p>
+  </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+          for(tablink of tablinks){ 
+            tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script> 
+    
+    <script>
+        function openmenu(){
+          Sidemenu.style.right="0";
+          }
+        function closemenu(){
+          Sidemenu.style.right="-200px";
+          }
+    </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxHf3zO_vhHdL7_vb3m2gpB_8rzQ7uxaV1ZjPLJp9lfEyDTzfoX7EbGPtlK45jPdqYAKg/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg =document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML =""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+  </body>
+</html>
